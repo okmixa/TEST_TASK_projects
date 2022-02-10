@@ -105,7 +105,14 @@ int main(int argc, char* argv[])
         inFile.open(argv[1]);
         if (inFile.fail()) {
                 cerr << "Error: File not found" << endl;
-                exit(1);
+                cout << "opening default data file..." <<endl;
+                inFile.open("data.txt");
+                if(inFile.fail())
+                {
+                    cerr << "Error: data.txt not found" << endl;
+                    exit(1);
+                }
+
         }
     } else {
         cerr << "Error: no given file path" << endl;
