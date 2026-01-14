@@ -1,4 +1,4 @@
-# LINX High-Performance TCP Client-Server
+# LINUX High-Performance TCP Client-Server
 
 A clean, robust, and high-performance TCP protocol for transmitting user data (ID, name, email) in C++ using Qt.
 
@@ -27,8 +27,9 @@ cmake ..
 make
 ```
 # Run
+```bash
 ./server/linx_server & ./client/linx_client &
-
+```
 
 ### Build & Run Tests
 
