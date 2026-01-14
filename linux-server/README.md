@@ -27,8 +27,9 @@ cmake ..
 make
 ```
 # Run
+```bash
 ./server/linx_server & ./client/linx_client &
-
+```
 
 ### Build & Run Tests
 
